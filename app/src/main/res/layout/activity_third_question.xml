@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".ThirdQuestion">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="608dp"
+        android:layout_height="785dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/luzha" />
+
+    <Button
+        android:id="@+id/wron"
+        android:layout_width="276dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/btns"
+        android:fontFamily="@font/hachimarupop_regular"
+        android:text="1) Корзину, шляпу, собачонку"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        app:cornerRadius="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:strokeColor="@color/obvodka"
+        app:strokeWidth="2sp" />
+
+    <Button
+        android:id="@+id/correct"
+        android:layout_width="276dp"
+        android:layout_height="63dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/btns"
+        android:fontFamily="@font/hachimarupop_regular"
+        android:text="2) Диван, чемодан, саквояж"
+        android:textSize="15sp"
+        app:cornerRadius="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wron"
+        app:strokeColor="@color/obvodka"
+        app:strokeWidth="2sp" />
+
+    <Button
+        android:id="@+id/wrong"
+        android:layout_width="277dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/btns"
+        android:fontFamily="@font/hachimarupop_regular"
+        android:text="3)  Картину, картонку, иконку"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        app:cornerRadius="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correct"
+        app:strokeColor="@color/obvodka"
+        app:strokeWidth="2sp" />
+
+    <ImageView
+        android:id="@+id/questions3"
+        android:layout_width="357dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dobro" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="335dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/hachimarupop_regular"
+        android:gravity="center_horizontal"
+        android:text="Что сдавала в багаж дама?"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/questions3"
+        app:layout_constraintEnd_toEndOf="@+id/questions3"
+        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintStart_toStartOf="@+id/questions3"
+        app:layout_constraintTop_toTopOf="@+id/questions3" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="347dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/hachimarupop_regular"
+        android:gravity="center_horizontal"
+        android:text="Выберите один вариант ответа"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questions3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

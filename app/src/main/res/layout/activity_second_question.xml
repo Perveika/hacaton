@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".SecondQuestion">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="608dp"
+        android:layout_height="785dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/luzha" />
+
+    <Button
+        android:id="@+id/month12"
+        android:layout_width="277dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/btns"
+        android:fontFamily="@font/hachimarupop_regular"
+        android:text="3) Двенадцать месяцев"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        app:cornerRadius="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wron1"
+        app:strokeColor="@color/obvodka"
+        app:strokeWidth="2sp" />
+
+    <Button
+        android:id="@+id/wron1"
+        android:layout_width="276dp"
+        android:layout_height="63dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/btns"
+        android:fontFamily="@font/hachimarupop_regular"
+        android:text="2) Подснежники"
+        android:textSize="16sp"
+        app:cornerRadius="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wron2"
+        app:strokeColor="@color/obvodka"
+        app:strokeWidth="2sp" />
+
+    <Button
+        android:id="@+id/wron2"
+        android:layout_width="276dp"
+        android:textColor="@color/white"
+        android:layout_height="63dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/btns"
+        android:fontFamily="@font/hachimarupop_regular"
+        android:text="1) Кошкин дом"
+        android:textSize="16sp"
+        app:cornerRadius="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:strokeColor="@color/obvodka"
+        app:strokeWidth="2sp" />
+
+    <ImageView
+        android:id="@+id/questions2"
+        android:layout_width="340dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dobro" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="335dp"
+        android:layout_height="84dp"
+        android:fontFamily="@font/hachimarupop_regular"
+        android:gravity="center_horizontal"
+        android:text="В каком произведении главная героиня раздобыла подснежники зимой?"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/questions2"
+        app:layout_constraintEnd_toEndOf="@+id/questions2"
+        app:layout_constraintStart_toStartOf="@+id/questions2"
+        app:layout_constraintTop_toTopOf="@+id/questions2" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="347dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/hachimarupop_regular"
+        android:gravity="center_horizontal"
+        android:text="Выберите один вариант ответа"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questions2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

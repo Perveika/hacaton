@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Воронежские Литераторы</string>
+    <string name="titleChoose">Выберите литератора</string>
+    <string name="voronezh">Воронеж</string>
+    <string name="btnChoose">Выбрать</string>
+    <string name="btnBack">Назад</string>
+    <string name="btnForward">Вперёд</string>
+    <string name="btnDalee">Далее</string>
+    <string name="btnPlay">Играть</string>
+    <string name="btnExit">Выход</string>
+    <string name="btnSettings">Настройки</string>
+    <string name="btnBunin">И. А. Бунин</string>
+    <string name="btnMarshak">С. Я. Маршак</string>
+    <string name="titleMarshak">Добро пожаловать в мир Самуила Маршака</string>
+    <string name="titleM2">Ваше путешествие начинается в Воронеже, где в 1887 году родился наш герой. Щелкните на кнопку Воронеж, чтобы узнать интересный факт о городе.</string>
+    <string name="bioMarshak">22.10.1887 - 04.07.1964
+        Русский советский поэт, драматург и переводчик, литературный критик, сценарист. Автор популярных детских книг.</string>
+</resources>
+

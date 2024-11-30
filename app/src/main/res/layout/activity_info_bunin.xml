@@ -7,4 +7,107 @@
     android:background="@color/bg"
     tools:context=".info.Bunin">
 
+    <Button
+        android:id="@+id/back3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:backgroundTint="@color/btns"
+        android:fontFamily="@font/hachimarupop_regular"
+        android:onClick="goBackChoosing"
+        android:text="@string/btnBack"
+        android:textColor="@color/white"
+        app:cornerRadius="7sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeWidth="2sp" />
+
+    <Button
+        android:id="@+id/choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:backgroundTint="@color/btns"
+        android:textColor="@color/white"
+        android:fontFamily="@font/hachimarupop_regular"
+        android:text="@string/btnChoose"
+        app:cornerRadius="7sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeWidth="2sp" />
+
+    <ImageView
+        android:id="@+id/luzha"
+        style="@style/luzha"
+        android:layout_marginBottom="156dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/bunin_foto"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/black_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bunin" />
+
+    <ImageView
+        android:id="@+id/bunin_name"
+        android:layout_width="141dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bunin_foto"
+        app:srcCompat="@drawable/bunin_text" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="337dp"
+        android:layout_height="315dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bunin_name"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/unfo_text" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hachimarupop_regular"
+        android:text="@string/btnBunin"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/bunin_name"
+        app:layout_constraintEnd_toEndOf="@+id/bunin_name"
+        app:layout_constraintStart_toStartOf="@+id/bunin_name"
+        app:layout_constraintTop_toTopOf="@+id/bunin_name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="282dp"
+        android:layout_height="237dp"
+        android:fontFamily="@font/hachimarupop_regular"
+        android:text="22.10.1870 - 8.11.1953                           Ива́н Алексе́евич Бу́нин — русский писатель, поэт и переводчик, лауреат Нобелевской премии по литературе 1933 года. "
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,23 +8,6 @@
     tools:context=".Choosing">
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="237dp"
-        android:layout_height="81dp"
-        android:layout_marginTop="25dp"
-        android:backgroundTint="@color/btns"
-        android:fontFamily="@font/hachimarupop_regular"
-        android:text="@string/titleChoose"
-        android:textSize="18sp"
-        app:cornerRadius="6sp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.004" />
-
-    <Button
         android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -33,39 +16,26 @@
         android:fontFamily="@font/hachimarupop_regular"
         android:onClick="goBackMenu"
         android:text="@string/btnBack"
+        android:textColor="@color/white"
         app:cornerRadius="7sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.024"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/forward"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:backgroundTint="@color/btns"
-        android:fontFamily="@font/hachimarupop_regular"
-        android:onClick="toChoosingList2"
-        android:text="@string/btnForward"
-        app:cornerRadius="7sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.97"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/obvodka"
+        app:strokeWidth="2sp" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="360dp"
         android:layout_height="542dp"
         android:layout_marginStart="6dp"
-        android:layout_marginTop="7dp"
         android:layout_marginEnd="6dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.191">
+        app:layout_constraintTop_toBottomOf="@+id/imageView14">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -73,40 +43,26 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageBunin"
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="toInfo"
-                app:srcCompat="@drawable/bunin" />
-
-            <ImageView
                 android:id="@+id/imageMarshak"
                 android:layout_width="1dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="toMarshakInfo"
                 app:srcCompat="@drawable/marshak" />
+
+            <ImageView
+                android:id="@+id/imageBunin"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="toBuninInfo"
+                app:srcCompat="@drawable/bunin" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:backgroundTint="@color/btns"
-                android:fontFamily="@font/hachimarupop_regular"
-                android:insetLeft="15sp"
-                android:insetRight="15sp"
-                android:onClick="toInfo"
-                android:text="@string/btnBunin"
-                android:textSize="12sp"
-                app:cornerRadius="7sp"
-                app:strokeWidth="2sp" />
 
             <Button
                 android:id="@+id/button8"
@@ -117,7 +73,25 @@
                 android:fontFamily="@font/hachimarupop_regular"
                 android:insetLeft="15sp"
                 android:insetRight="15sp"
+                android:textColor="@color/white"
+                android:onClick="toMarshakInfo"
                 android:text="@string/btnMarshak"
+                android:textSize="12sp"
+                app:cornerRadius="7sp"
+                app:strokeWidth="2sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:backgroundTint="@color/btns"
+                android:fontFamily="@font/hachimarupop_regular"
+                android:insetLeft="15sp"
+                android:insetRight="15sp"
+                android:onClick="toBuninInfo"
+                android:text="@string/btnBunin"
+                android:textColor="@color/white"
                 android:textSize="12sp"
                 app:cornerRadius="7sp"
                 app:strokeWidth="2sp" />
@@ -125,5 +99,30 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="306dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chose" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="265dp"
+        android:layout_height="77dp"
+        android:fontFamily="@font/hachimarupop_regular"
+        android:text="Выберите литератора"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView14" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

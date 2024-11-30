@@ -25,13 +25,16 @@
         android:layout_marginTop="308dp"
         android:backgroundTint="@color/btns"
         android:fontFamily="@font/hachimarupop_regular"
+        android:onClick="choosingLiterators"
         android:text="@string/btnPlay"
+        android:textColor="@color/white"
         android:textSize="26sp"
         app:cornerRadius="7sp"
-        android:onClick="choosingLiterators"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/obvodka"
+        app:strokeWidth="2sp" />
 
     <Button
         android:id="@+id/button5"
@@ -42,11 +45,14 @@
         android:fontFamily="@font/hachimarupop_regular"
         android:onClick="openSettings"
         android:text="@string/btnSettings"
+        android:textColor="@color/white"
         app:cornerRadius="7sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7" />
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        app:strokeColor="@color/obvodka"
+        app:strokeWidth="2sp" />
 
     <Button
         android:id="@+id/button4"
@@ -57,9 +63,12 @@
         android:backgroundTint="@color/btns"
         android:fontFamily="@font/hachimarupop_regular"
         android:text="@string/btnExit"
+        android:textColor="@color/white"
         app:cornerRadius="7sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="@color/obvodka"
+        app:strokeWidth="2sp" />
 
     <ImageView
         android:id="@+id/imageView"
